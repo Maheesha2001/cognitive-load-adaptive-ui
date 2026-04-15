@@ -1,32 +1,7 @@
 ***Behavior Signals***
 
-[1. Click Delay [2](#click-delay)](#click-delay)
 
-[2. Scroll Behavior [3](#scroll-behavior)](#scroll-behavior)
-
-[3. Backtracking [3](#backtracking)](#backtracking)
-
-[4. Errors (Interaction Corrections) [3](#errors-interaction-corrections)](#errors-interaction-corrections)
-
-[5. Hesitation (Inactivity) [4](#hesitation-inactivity)](#hesitation-inactivity)
-
-[Signal Mapping to Cognitive Load [4](#signal-mapping-to-cognitive-load)](#signal-mapping-to-cognitive-load)
-
-[Signal Categories (Important for clarity) [4](#signal-categories-important-for-clarity)](#signal-categories-important-for-clarity)
-
-[🔹 Engagement Signals [4](#engagement-signals)](#engagement-signals)
-
-[🔹 Confusion Signals [4](#confusion-signals)](#confusion-signals)
-
-[🔹 Cognitive Effort Signals [5](#cognitive-effort-signals)](#cognitive-effort-signals)
-
-[How Signals Are Used in the System [5](#how-signals-are-used-in-the-system)](#how-signals-are-used-in-the-system)
-
-[Example Scenario [5](#example-scenario)](#example-scenario)
-
-[Future Enhancements [5](#future-enhancements)](#future-enhancements)
-
-### **1. Click Delay** {#click-delay}
+### **1. Click Delay** 
 
 - **Definition:**
 
@@ -38,7 +13,7 @@
 
   - Long delay → User is thinking before taking a specific action
 
-### **2. Scroll Behavior** {#scroll-behavior}
+### **2. Scroll Behavior** 
 
 - **Definition:**  
   Speed and pattern of user scrolling
@@ -51,7 +26,7 @@
 
   - Irregular scrolling (up/down repeatedly) → Uncertainty
 
-### **3. Backtracking** {#backtracking}
+### **3. Backtracking** 
 
 - **Definition:**  
   User navigates back to previously visited pages or sections repeatedly
@@ -62,7 +37,7 @@
 
   - Suggests information overload or lack of clarity
 
-### **4. Errors (Interaction Corrections)** {#errors-interaction-corrections}
+### **4. Errors (Interaction Corrections)** 
 
 - **Definition:**
 
@@ -84,7 +59,7 @@
 
   - Suggests difficulty comparing options or understanding information
 
-### **5. Hesitation (Inactivity)** {#hesitation-inactivity}
+### **5. Hesitation (Inactivity)**
 
 - **Definition:**  
   Periods of **general inactivity** where the user does not perform any interaction (no clicks, no scrolling) for a noticeable duration.
@@ -111,13 +86,13 @@
 
 ## **Signal Categories (Important for clarity)**
 
-### **🔹 Engagement Signals** {#engagement-signals}
+### **🔹 Engagement Signals**
 
 - Scroll speed
 
 - Time on page
 
-### **🔹 Confusion Signals** {#confusion-signals}
+### **🔹 Confusion Signals**
 
 - Repeated clicks
 
@@ -125,7 +100,7 @@
 
 - Misclicks
 
-### **🔹 Cognitive Effort Signals** {#cognitive-effort-signals}
+### **🔹 Cognitive Effort Signals**
 
 - Click delay
 

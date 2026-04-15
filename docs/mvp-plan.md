@@ -1,60 +1,7 @@
 ***MVP Plan***
 
-[1. Overview [2](#overview)](#overview)
 
-[2. MVP Features [3](#mvp-features)](#mvp-features)
-
-[Core Features [3](#core-features)](#core-features)
-
-[3. System Architecture (MVP Scope) [3](#system-architecture-mvp-scope)](#system-architecture-mvp-scope)
-
-[4. Step-by-Step Implementation Plan [3](#step-by-step-implementation-plan)](#step-by-step-implementation-plan)
-
-[Step 1: Build Demo UI (Frontend Layer) [3](#step-1-build-demo-ui-frontend-layer)](#step-1-build-demo-ui-frontend-layer)
-
-[Tasks: [3](#tasks)](#tasks)
-
-[Output: [4](#output)](#output)
-
-[Suggested Tech: [4](#suggested-tech)](#suggested-tech)
-
-[Step 2: Implement Tracking Layer (Behavior Capture) [4](#step-2-implement-tracking-layer-behavior-capture)](#step-2-implement-tracking-layer-behavior-capture)
-
-[Tracked Signals: [4](#tracked-signals)](#tracked-signals)
-
-[Implementation: [4](#implementation)](#implementation)
-
-[Output: [4](#output-1)](#output-1)
-
-[Step 3: Cognitive Load Engine (Scoring System) [4](#step-3-cognitive-load-engine-scoring-system)](#step-3-cognitive-load-engine-scoring-system)
-
-[Tasks: [5](#tasks-1)](#tasks-1)
-
-[Output: [5](#output-2)](#output-2)
-
-[Display: [5](#display)](#display)
-
-[Step 4: UI Adaptation Layer [5](#step-4-ui-adaptation-layer)](#step-4-ui-adaptation-layer)
-
-[LOW LOAD (0--30) [5](#low-load-030)](#low-load-030)
-
-[MEDIUM LOAD (31--60) [5](#medium-load-3160)](#medium-load-3160)
-
-[HIGH LOAD (61+) [5](#high-load-61)](#high-load-61)
-
-[Implementation: [6](#implementation-1)](#implementation-1)
-
-[5. User Flow (MVP) [6](#user-flow-mvp)](#user-flow-mvp)
-
-[6. Technology Stack [6](#technology-stack)](#technology-stack)
-
-[7. Success Criteria [6](#success-criteria)](#success-criteria)
-
-[8. Risks & Challenges [6](#risks-challenges)](#risks-challenges)
-
-[9. Future Improvements (Post-MVP) [6](#future-improvements-post-mvp)](#future-improvements-post-mvp)
-
-### **1. Overview** {#overview}
+### **1. Overview**
 
 The MVP focuses on building a **working prototype** of a Cognitive Load Adaptive Interface system.
 
@@ -68,7 +15,7 @@ The prototype demonstrates three core capabilities:
 
 The goal is to validate the concept using a **minimal but functional system**, not a production-ready product.
 
-### **2. MVP Features** {#mvp-features}
+### **2. MVP Features**
 
 #### **Core Features**
 
@@ -82,7 +29,7 @@ The goal is to validate the concept using a **minimal but functional system**, n
 
 - Basic UI adaptation based on load level
 
-### **3. System Architecture (MVP Scope)** {#system-architecture-mvp-scope}
+### **3. System Architecture (MVP Scope)**
 
 The MVP follows a simplified pipeline:
 
@@ -90,7 +37,7 @@ The MVP follows a simplified pipeline:
 
 All components run on the **client side (JavaScript-based MVP)**.
 
-### **4. Step-by-Step Implementation Plan** {#step-by-step-implementation-plan}
+### **4. Step-by-Step Implementation Plan**
 
 #### **Step 1: Build Demo UI (Frontend Layer)**
 
@@ -182,11 +129,11 @@ Use JavaScript event listeners:
 
 ##### **Display:**
 
-- "Cognitive Load: LOW 🟢"
+- "Cognitive Load: LOW"
 
-- "Cognitive Load: MEDIUM 🟡"
+- "Cognitive Load: MEDIUM"
 
-- "Cognitive Load: HIGH 🔴"
+- "Cognitive Load: HIGH"
 
 #### **Step 4: UI Adaptation Layer**
 
@@ -228,7 +175,7 @@ Use JavaScript event listeners:
 
 - Conditional rendering
 
-### **5. User Flow (MVP)** {#user-flow-mvp}
+### **5. User Flow (MVP)**
 
 1.  User opens demo product page
 
@@ -242,7 +189,7 @@ Use JavaScript event listeners:
 
 6.  UI adapts dynamically
 
-### **6. Technology Stack** {#technology-stack}
+### **6. Technology Stack**
 
 | **Component**  | **Technology**             |
 |----------------|----------------------------|
@@ -251,7 +198,7 @@ Use JavaScript event listeners:
 | Logic Engine   | JavaScript (rule-based)    |
 | Hosting        | Localhost / GitHub Pages   |
 
-### **7. Success Criteria** {#success-criteria}
+### **7. Success Criteria**
 
 The MVP is successful if:
 
@@ -265,7 +212,7 @@ The MVP is successful if:
 
 - System runs smoothly without performance issues
 
-### **8. Risks & Challenges** {#risks-challenges}
+### **8. Risks & Challenges**
 
 - Inaccurate behavioral signal interpretation
 
@@ -275,7 +222,7 @@ The MVP is successful if:
 
 - Browser event noise (scroll/click sensitivity issues)
 
-### **9. Future Improvements (Post-MVP)** {#future-improvements-post-mvp}
+### **9. Future Improvements (Post-MVP)**
 
 - Machine learning-based cognitive load prediction
 

@@ -1,34 +1,7 @@
 ***Load Scoring Logic***
 
-[1. Overview [2](#overview)](#overview)
 
-[2. Define formula: [3](#define-formula)](#define-formula)
-
-[3. Input Normalization (Important) [3](#input-normalization-important)](#input-normalization-important)
-
-[Example: [3](#example)](#example)
-
-[4. Signal Weights Explanation [3](#signal-weights-explanation)](#signal-weights-explanation)
-
-[5. Classification of Cognitive Load [3](#classification-of-cognitive-load)](#classification-of-cognitive-load)
-
-[6. Decision Logic [3](#decision-logic)](#decision-logic)
-
-[7. Example Calculation [3](#example-calculation)](#example-calculation)
-
-[Scenario: [3](#scenario)](#scenario)
-
-[Calculation: [3](#calculation)](#calculation)
-
-[8. Real-Time Processing Flow [3](#real-time-processing-flow)](#real-time-processing-flow)
-
-[9. Threshold Tuning (Advanced Improvement) [3](#threshold-tuning-advanced-improvement)](#threshold-tuning-advanced-improvement)
-
-[10. Limitations [3](#limitations)](#limitations)
-
-[11. Future Enhancements [3](#future-enhancements)](#future-enhancements)
-
-### **1. Overview** {#overview}
+### **1. Overview**
 
 The Load Scoring Logic defines how user interaction signals are converted into a **numerical Cognitive Load Score**, which represents the user's mental effort while interacting with the system.
 
@@ -40,7 +13,7 @@ This score is used to:
 
 This model is a heuristic-based approximation of cognitive load derived from observable user interaction behavior
 
-### **2. Define formula:** {#define-formula}
+### **2. Define formula:**
 
 Cognitive Load Score =
 
@@ -54,7 +27,7 @@ Cognitive Load Score =
 
 \+ (Scroll Irregularity × 1)
 
-### **3. Input Normalization (Important)** {#input-normalization-important}
+### **3. Input Normalization (Important)**
 
 To maintain consistency, raw signals should be normalized before applying the formula.
 
@@ -74,7 +47,7 @@ To maintain consistency, raw signals should be normalized before applying the fo
 
 ### 
 
-### **4. Signal Weights Explanation** {#signal-weights-explanation}
+### **4. Signal Weights Explanation**
 
 Each signal is assigned a weight based on its impact on cognitive load:
 
@@ -92,7 +65,7 @@ Each signal is assigned a weight based on its impact on cognitive load:
 
 - **Scroll Irregularity** → frequency of rapid up/down scroll direction changes within a short time window
 
-### **5. Classification of Cognitive Load** {#classification-of-cognitive-load}
+### **5. Classification of Cognitive Load**
 
 | **Score Range** | **Cognitive Load Level** | **Interpretation**                |
 |-----------------|--------------------------|-----------------------------------|
@@ -100,7 +73,7 @@ Each signal is assigned a weight based on its impact on cognitive load:
 | 31 -- 60        | Medium                   | User shows some hesitation        |
 | 61+             | High                     | User is confused or overloaded    |
 
-### **6. Decision Logic** {#decision-logic}
+### **6. Decision Logic**
 
 - **Low Load**
 
@@ -122,7 +95,7 @@ Each signal is assigned a weight based on its impact on cognitive load:
 
   - Provide guidance
 
-### **7. Example Calculation** {#example-calculation}
+### **7. Example Calculation**
 
 #### **Scenario:**
 
@@ -144,7 +117,7 @@ Score = (5×2) + (6×2) + (3×3) + (2×5) + (4×1)
 
 ➡️ **Result: Medium Cognitive Load**
 
-### **8. Real-Time Processing Flow** {#real-time-processing-flow}
+### **8. Real-Time Processing Flow**
 
 1.  Tracking Layer collects signals
 
@@ -158,7 +131,7 @@ Score = (5×2) + (6×2) + (3×3) + (2×5) + (4×1)
 
 6.  UI updates instantly
 
-### **9. Threshold Tuning (Advanced Improvement)** {#threshold-tuning-advanced-improvement}
+### **9. Threshold Tuning (Advanced Improvement)**
 
 - Thresholds can be adjusted based on:
 
@@ -174,7 +147,7 @@ Example:
 
 - Experts → higher tolerance
 
-### **10. Limitations** {#limitations}
+### **10. Limitations**
 
 - Rule-based logic may not capture all behaviors
 
@@ -182,7 +155,7 @@ Example:
 
 - Requires tuning for accuracy
 
-### **11. Future Enhancements** {#future-enhancements}
+### **11. Future Enhancements**
 
 - Replace rule-based scoring with Machine Learning models
 

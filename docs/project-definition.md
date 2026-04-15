@@ -1,39 +1,5 @@
 ***PROJECT DEFINITION***
 
-[1. Project Name [2](#project-name)](#project-name)
-
-[2. Problem Statement [3](#problem-statement)](#problem-statement)
-
-[3. Target Users / Personas
-[3](#target-users-personas)](#target-users-personas)
-
-[5. Target Domain [3](#target-domain)](#target-domain)
-
-[6. Goals & Objectives [3](#goals-objectives)](#goals-objectives)
-
-[7. Scope [4](#scope)](#scope)
-
-[8. Success Metrics [4](#success-metrics)](#success-metrics)
-
-[User Experience Metrics:
-[4](#user-experience-metrics)](#user-experience-metrics)
-
-[Behavioral Metrics: [4](#behavioral-metrics)](#behavioral-metrics)
-
-[Business Metrics: [4](#business-metrics)](#business-metrics)
-
-[User Satisfaction Metrics:
-[4](#user-satisfaction-metrics)](#user-satisfaction-metrics)
-
-[9. Assumptions [4](#assumptions)](#assumptions)
-
-[10. Constraints [4](#constraints)](#constraints)
-
-[11. Risks [5](#risks)](#risks)
-
-[12. Future Enhancements
-[5](#future-enhancements)](#future-enhancements)
-
 ### 
 
 ### **1. Project Name**

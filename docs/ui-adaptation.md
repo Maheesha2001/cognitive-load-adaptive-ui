@@ -3,37 +3,6 @@
 
 ***UI Adaptation Rules***
 
-
-
-[1. Overview	2](#_toc2026163786)
-
-[Goals:	3](#_toc1483007437)
-
-[2. Adaptation Strategy	3](#_toc576800214)
-
-[3. UI Adaptation Rules by Load Level	3](#_toc637229572)
-
-[LOW LOAD (0–30)	3](#_toc1167145689)
-
-[MEDIUM LOAD (31–60)	4](#_toc38406104)
-
-[HIGH LOAD (61+)	4](#_toc1214120800)
-
-[4. Load Trigger Mapping	5](#_toc1832685031)
-
-[5. UI Components Affected	5](#_toc1531048388)
-
-[6. Transition Behavior (UX Stability Principle)	5](#_toc1803299225)
-
-[7. Example Scenario	5](#_toc1570325481)
-
-[8. Design Principles	6](#_toc965957)
-
-[9. Limitations	6](#_toc1656911648)
-
-[10. Future Enhancements	6](#_toc1476102345)
-
-
 ### <a name="_toc2026163786"></a>**1. Overview**
 The **UI Adaptation Module** dynamically modifies the user interface based on the user’s **Cognitive Load Level**, which is computed by the Cognitive Load Engine.
 

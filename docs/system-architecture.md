@@ -1,70 +1,6 @@
 ***System Architecture***
 
-[1. Architecture Overview
-[2](#architecture-overview)](#architecture-overview)
-
-[High-Level Flow: [3](#high-level-flow)](#high-level-flow)
-
-[2. System Components [3](#system-components)](#system-components)
-
-[2.1 Frontend (UI Layer) [3](#frontend-ui-layer)](#frontend-ui-layer)
-
-[Responsibilities: [3](#responsibilities)](#responsibilities)
-
-[Technologies (example):
-[3](#technologies-example)](#technologies-example)
-
-[2.2 Tracking Layer (Browser Extension / Script)
-[3](#tracking-layer-browser-extension)](#tracking-layer-browser-extension)
-
-[• Tracked Signals: [3](#tracked-signals)](#tracked-signals)
-
-[• Additional Signals (Recommended Upgrade ⭐):
-[4](#additional-signals-recommended-upgrade)](#additional-signals-recommended-upgrade)
-
-[• Responsibilities: [4](#responsibilities-1)](#responsibilities-1)
-
-[2.3 Cognitive Load Engine
-[4](#cognitive-load-engine)](#cognitive-load-engine)
-
-[Approach: [4](#approach)](#approach)
-
-[Scoring Formula: [4](#scoring-formula)](#scoring-formula)
-
-[Load Classification: [4](#load-classification)](#load-classification)
-
-[Responsibilities: [5](#responsibilities-2)](#responsibilities-2)
-
-[2.4 UI Adapter (Adaptive Interface Engine)
-[5](#ui-adapter-adaptive-interface-engine)](#ui-adapter-adaptive-interface-engine)
-
-[Adaptation Rules: [5](#adaptation-rules)](#adaptation-rules)
-
-[🔹 Low Load [5](#low-load)](#low-load)
-
-[🔹 Medium Load [5](#medium-load)](#medium-load)
-
-[🔹 High Load [5](#high-load)](#high-load)
-
-[Responsibilities: [6](#responsibilities-3)](#responsibilities-3)
-
-[3. Data Flow [6](#data-flow)](#data-flow)
-
-[4. Technology Stack (Suggested)
-[6](#technology-stack-suggested)](#technology-stack-suggested)
-
-[5. Scalability Considerations
-[6](#scalability-considerations)](#scalability-considerations)
-
-[6. Performance Considerations
-[6](#performance-considerations)](#performance-considerations)
-
-[7. Security & Privacy Considerations
-[6](#security-privacy-considerations)](#security-privacy-considerations)
-
-[8. Future Enhancements [6](#future-enhancements)](#future-enhancements)
-
-## **1. Architecture Overview** {#architecture-overview .unnumbered}
+## **1. Architecture Overview**
 
 The system follows a **layered architecture** that captures user
 behavior, processes it to estimate cognitive load, and dynamically
@@ -73,19 +9,19 @@ adapts the user interface in real time.
 The system is designed as a modular, real-time adaptive interface that
 operates entirely on the client side for the MVP version.
 
-### **High-Level Flow:** {#high-level-flow .unnumbered}
+### **High-Level Flow:**
 
 **User → Frontend UI → Tracking Layer → Cognitive Load Engine → UI
 Adapter → Updated UI**
 
-## **2. System Components** {#system-components .unnumbered}
+## **2. System Components**
 
-### **2.1 Frontend (UI Layer)** {#frontend-ui-layer .unnumbered}
+### **2.1 Frontend (UI Layer)**
 
 A simulated **e-commerce product page (Daraz-like interface)** where all
 user interactions occur.
 
-#### **Responsibilities:** {#responsibilities .unnumbered}
+#### **Responsibilities:**
 
 -   Display product information (images, price, description)
 
@@ -99,13 +35,13 @@ user interactions occur.
 
 -   Capture user interaction events (clicks, scrolls, navigation)
 
-#### **Technologies (example):** {#technologies-example .unnumbered}
+#### **Technologies (example):**
 
 -   HTML, CSS, JavaScript
 
 -   React / Angular (optional)
 
-### **2.2 Tracking Layer (Browser Extension)** {#tracking-layer-browser-extension .unnumbered}
+### **2.2 Tracking Layer (Browser Extension)**
 
 -   A lightweight tracking module that monitors user interaction
     behavior in real time.
@@ -126,7 +62,7 @@ user interactions occur.
 
 -   Repeated clicks (confusion indicator)
 
-#### **Responsibilities:** {#responsibilities-1 .unnumbered}
+#### **Responsibilities:**
 
 -   Collect behavioral data
 
@@ -134,15 +70,15 @@ user interactions occur.
 
 -   Send data to Cognitive Load Engine
 
-### **2.3 Cognitive Load Engine** {#cognitive-load-engine .unnumbered}
+### **2.3 Cognitive Load Engine**
 
 The core logic unit that estimates the user\'s cognitive load level.
 
-#### **Approach:** {#approach .unnumbered}
+#### **Approach:**
 
 Rule-based scoring system (MVP-friendly)
 
-#### **Scoring Formula:** {#scoring-formula .unnumbered}
+#### **Scoring Formula:**
 
 Cognitive Load Score =
 
@@ -156,7 +92,7 @@ Cognitive Load Score =
 
 \+ (Scroll Irregularity × 1)
 
-#### **Load Classification:** {#load-classification .unnumbered}
+#### **Load Classification:**
 
 -   **Low Load** → Smooth interaction
 
@@ -164,7 +100,7 @@ Cognitive Load Score =
 
 -   **High Load** → Confusion / overload
 
-#### **Responsibilities:** {#responsibilities-2 .unnumbered}
+#### **Responsibilities:**
 
 -   Aggregate behavioral signals
 
@@ -182,19 +118,19 @@ Cognitive Load Score =
 
 -   add hints
 
-### **2.4 UI Adapter (Adaptive Interface Engine)** {#ui-adapter-adaptive-interface-engine .unnumbered}
+### **2.4 UI Adapter (Adaptive Interface Engine)**
 
 Dynamically modifies the interface based on detected cognitive load.
 
-#### **Adaptation Rules:** {#adaptation-rules .unnumbered}
+#### **Adaptation Rules:**
 
-##### **🔹 Low Load** {#low-load .unnumbered}
+##### **🔹 Low Load**
 
 -   Show full interface
 
 -   Enable all features
 
-##### **🔹 Medium Load** {#medium-load .unnumbered}
+##### **🔹 Medium Load**
 
 -   Highlight important elements
 
@@ -202,7 +138,7 @@ Dynamically modifies the interface based on detected cognitive load.
 
 -   Provide subtle hints
 
-##### **🔹 High Load** {#high-load .unnumbered}
+##### **🔹 High Load**
 
 -   Simplify layout
 
@@ -212,7 +148,7 @@ Dynamically modifies the interface based on detected cognitive load.
 
 -   Show guidance (tooltips / suggestions)
 
-#### **Responsibilities:** {#responsibilities-3 .unnumbered}
+#### **Responsibilities:**
 
 -   Receive load classification
 
@@ -220,7 +156,7 @@ Dynamically modifies the interface based on detected cognitive load.
 
 -   Update UI in real time
 
-## **3. Data Flow** {#data-flow .unnumbered}
+## **3. Data Flow**
 
 1.  User interacts with the **Frontend UI**
 
@@ -236,7 +172,7 @@ Dynamically modifies the interface based on detected cognitive load.
 
 7.  User experiences adapted interface
 
-## **4. Technology Stack (Suggested)** {#technology-stack-suggested .unnumbered}
+## **4. Technology Stack (Suggested)**
 
   -----------------------------------------------------------------------
   **Layer**                           **Technology**
@@ -252,7 +188,7 @@ Dynamically modifies the interface based on detected cognitive load.
   Hosting                             Localhost / AWS (optional)
   -----------------------------------------------------------------------
 
-## **5. Scalability Considerations** {#scalability-considerations .unnumbered}
+## **5. Scalability Considerations**
 
 -   Modular architecture (each component independent)
 
@@ -262,7 +198,7 @@ Dynamically modifies the interface based on detected cognitive load.
 
 -   Event streaming for real-time processing
 
-## **6. Performance Considerations** {#performance-considerations .unnumbered}
+## **6. Performance Considerations**
 
 -   Lightweight tracking (avoid slowing UI)
 
@@ -270,7 +206,7 @@ Dynamically modifies the interface based on detected cognitive load.
 
 -   Minimal DOM manipulation for UI updates
 
-## **7. Security & Privacy Considerations** {#security-privacy-considerations .unnumbered}
+## **7. Security & Privacy Considerations**
 
 -   Do not collect sensitive user data
 
@@ -278,7 +214,7 @@ Dynamically modifies the interface based on detected cognitive load.
 
 -   Ensure transparency in tracking
 
-## **8. Future Enhancements** {#future-enhancements .unnumbered}
+## **8. Future Enhancements**
 
 -   Machine Learning-based cognitive load detection
 
